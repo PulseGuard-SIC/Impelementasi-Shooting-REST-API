@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "91680700-8061-4cd7-a739-49d31a7fbc5e",
+		"name": "Flask Cloud Data Sensor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36416191"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/sensor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n    \"temperature\": 36.6,\r\n    \"heart_rate\": 70,\r\n    \"spo2\": 98\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/sensor",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"sensor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
